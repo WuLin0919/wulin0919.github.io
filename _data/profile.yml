@@ -1,0 +1,83 @@
+primary_name: "Wu Lin"
+secondary_name: "伍霖"
+navbar_name: "Wu Lin"
+
+positions:
+- name: Undergraduate Student in Engineering Mechanics
+- name: Nanjing University of Aeronautics and Astronautics
+  logo: /assets/images/badges/NUAA.svg
+
+email: "wulin0919@nuaa.edu.cn"
+cv_link: /assets/files/Wu_Lin_CV.pdf
+orcid: 0009-0005-6544-2197
+wos: https://webofscience.clarivate.cn/wos/author/record/POY-4128-2026
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+    I am an undergraduate student in the Qian Weichang Honors Program of Engineering Mechanics at
+    Nanjing University of Aeronautics and Astronautics. My academic training covers theoretical
+    mechanics, material mechanics, elasticity, fluid mechanics, computational mechanics, experimental
+    mechanics, plasticity, analytical mechanics, aircraft structural mechanics, vibration theory,
+    numerical computation, and advanced dynamics.
+  </p>
+  <p>
+    My current research interests lie in multibody system dynamics, spacecraft dynamics and control,
+    computational mechanics, and trajectory optimization. I have worked on assembly trajectory
+    optimization for swarm satellite systems using natural coordinate formulation, potential-field and
+    PD control, distributed auction algorithms, and generalized-alpha integration for differential
+    algebraic equations.
+  </p>
+  <p>
+    I ranked first in my major cohort (1/68), with an overall GPA of 4.2/5.0 and a required-course GPA
+    of 4.3/5.0. I am always happy to discuss mechanics, aerospace engineering, scientific computing,
+    and collaborative research opportunities.
+  </p>
+  <p>
+    Profiles:
+    <a href="https://orcid.org/0009-0005-6544-2197" target="_blank">ORCID</a> /
+    <a href="https://webofscience.clarivate.cn/wos/author/record/POY-4128-2026" target="_blank">Web of Science</a>.
+  </p>
+
+portrait_url: /assets/images/photos/wu_lin_portrait.jpg
+portrait_caption: >-
+  Wu Lin
+
+education:
+- name: Nanjing University of Aeronautics and Astronautics
+  logo: /assets/images/badges/NUAA.svg
+  dept: College of Aerospace Engineering
+  position: B.Eng. in Engineering Mechanics, Qian Weichang Honors Program
+  date: Sep. 2021 - Jun. 2025
+
+experience:
+- name: Youth Volunteer Association, College of Aerospace Engineering, NUAA
+  logo: /assets/images/badges/NUAA.svg
+  dept: Student Service
+  position: President
+  date: May 2023 - May 2024
+- name: Youth Volunteer Association, College of Aerospace Engineering, NUAA
+  logo: /assets/images/badges/NUAA.svg
+  dept: Student Service
+  position: Vice President
+  date: May 2022 - May 2023
+
+awards:
+- name: AVIC Scholarship, Second Prize
+  date: 2024
+- name: First Prize, 16th Chinese Mathematics Competitions, Non-Math Major Group A
+  date: 2024
+- name: First Prize, 21st Jiangsu Advanced Mathematics Competition
+  date: 2024
+- name: National Scholarship
+  date: 2023
+- name: Outstanding Student Cadre of Jiangsu Province
+  date: 2023
+- name: First Prize, 15th Chinese Mathematics Competitions, Non-Math Major Group A
+  date: 2023
+- name: Honorable Mention, 14th National Zhou Peiyuan Mechanics Competition
+  date: 2023
+- name: National Encouragement Scholarship
+  date: 2022
+- name: Top 100 Youth of Nanjing University of Aeronautics and Astronautics
+  date: 2022

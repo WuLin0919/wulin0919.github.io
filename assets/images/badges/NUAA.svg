@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NUAA">
+  <rect width="64" height="64" rx="12" fill="#1f5f9f"/>
+  <path d="M14 41 L31 13 L36 24 L50 22 L39 32 L46 51 L32 39 Z" fill="#ffffff"/>
+  <text x="32" y="57" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#ffffff">NUAA</text>
+</svg>
