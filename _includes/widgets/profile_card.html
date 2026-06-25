@@ -40,9 +40,6 @@
                         <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
                             {{ site.data.profile.short_bio }}
                         </div>
-                        {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
-                        {% endif %}
                     </div>
         
                 </div>
@@ -97,6 +94,12 @@
                         {% if site.data.profile.wos %}
                         <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.wos }}">
                             <i class="fas fa-book-open-reader"></i> Web of Science
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.researchgate %}
+                        <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.researchgate }}">
+                            <i class="fab fa-researchgate"></i> ResearchGate
                         </a>
                         {% endif %}
                     </div>
