@@ -91,3 +91,47 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.profile-name-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.flower-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    border: 1px solid rgba(40, 167, 69, 0.3);
+    border-radius: 999px;
+    background: rgba(40, 167, 69, 0.08);
+    color: #218838;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 0.22rem 0.45rem;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.flower-button:hover,
+.flower-button:focus {
+    background: rgba(40, 167, 69, 0.16);
+    color: #155724;
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.flower-button.is-sent {
+    background: rgba(40, 167, 69, 0.18);
+    color: #155724;
+    cursor: default;
+    transform: none;
+}
+
+.flower-button-large {
+    margin-left: 0.35rem;
+    font-size: 0.85rem;
+    transform: translateY(-0.15rem);
+}

@@ -8,6 +8,9 @@ positions:
   logo: /assets/images/badges/PKU.png
 
 email: "wulin0919@nuaa.edu.cn"
+emails:
+- "wulin0919@nuaa.edu.cn"
+- "linwu25@stu.pku.edu.cn"
 orcid: 0009-0005-6544-2197
 wos: https://webofscience.clarivate.cn/wos/author/record/POY-4128-2026
 researchgate: https://www.researchgate.net/profile/Wu-Lin-36?ev=hdr_xprf
@@ -18,15 +21,10 @@ short_bio: >-
     Hi, my name is Wu Lin. Welcome to my homepage. I received my bachelor's degree
     in Engineering Mechanics from Nanjing University of Aeronautics and Astronautics
     in 2025. Currently, I am a Ph.D. student in Solid Mechanics at the School of
-    Mechanics and Engineering Sciences, Peking University, advised by Professor
-    Yongmao Pei.
-  </p>
-  <p>
-    My research interests include solid mechanics, dynamics and control,
-    computational mechanics, acoustic manipulation, haptic feedback, and spacecraft
-    system dynamics. I have worked on trajectory optimization for on-orbit assembly
-    of swarm satellites, separation dynamics of stacked satellite systems, and
-    wave-based methods for programmable particle manipulation and haptic interaction.
+    Mechanics and Engineering Sciences, Peking University, advised by
+    <a href="https://orcid.org/0000-0002-5661-3135" target="_blank">Professor Yongmao Pei</a>.
+    My research interest mainly focuses on particle manipulation,
+    acoustic tweezers and so on.
     Welcome to reach out to me for communication and cooperation.
   </p>
 
@@ -47,6 +45,10 @@ education:
   date: Sep. 2021 - Jun. 2025
 
 awards:
+- name: Peking University Presidential Scholarship for Doctoral Students
+  date: 2026-2027
+- name: Peking University Presidential Scholarship for Doctoral Students
+  date: 2025-2026
 - name: AVIC Scholarship, Second Prize
   date: 2024
 - name: First Prize, 16th Chinese Mathematics Competitions, Non-Math Major Group A

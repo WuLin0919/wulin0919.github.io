@@ -21,8 +21,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                    <div class="col text-center h4 profile-name-line">
+                        <span>{{ site.data.profile.primary_name }}</span>
+                        <button type="button" class="flower-button" data-toggle="tooltip" data-placement="top" title="Send a flower">
+                            <i class="fas fa-spa"></i>
+                            <span class="flower-count">0</span>
+                        </button>
                     </div>
                 </div>
 
@@ -36,9 +40,17 @@
 
                 <div class="row small">
                     <div class="col text-center">
-                        <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
+                        {% if site.data.profile.emails %}
+                        {% for email in site.data.profile.emails %}
+                        <a class="email-text d-block" href="mailto:{{ email | encode_email }}">
+                            {{ email | replace: "@", "(at)" }}
+                        </a>
+                        {% endfor %}
+                        {% elsif site.data.profile.email %}
+                        <a class="email-text d-block" href="mailto:{{ site.data.profile.email | encode_email }}">
                             {{ site.data.profile.email | replace: "@", "(at)" }}
                         </a>
+                        {% endif %}
                     </div>
                 </div>
 

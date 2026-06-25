@@ -11,7 +11,7 @@ abstract: >-
   auction algorithms, and collision-avoidance forces to support rapid, collision-free assembly.
 authors:
   - Lin Wu
-  - Jialiang Sun
+  - Jialiang Sun#
   - Dongping Jin
 links:
   Paper: /assets/files/publications/2025-swarm-satellite-trajectory-optimization.pdf

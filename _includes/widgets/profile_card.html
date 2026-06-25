@@ -20,6 +20,10 @@
                         <div class="d-flex">
                             <div class="h1 font-weight-normal">
                                 {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
+                                <button type="button" class="flower-button flower-button-large" data-toggle="tooltip" data-placement="top" title="Send a flower">
+                                    <i class="fas fa-spa"></i>
+                                    <span class="flower-count">0</span>
+                                </button>
                             </div>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
@@ -46,9 +50,17 @@
                 <hr />
                 <div class="row">
                     <div class="col">
+                        {% if site.data.profile.emails %}
+                        {% for email in site.data.profile.emails %}
+                        <a class="pr-3" href="mailto:{{ email | encode_email }}">
+                            <i class="fas fa-at"></i> <span class="email-text">{{ email | replace: "@", "(at)" }}</span>
+                        </a>
+                        {% endfor %}
+                        {% elsif site.data.profile.email %}
                         <a class="pr-3" href="mailto:{{ site.data.profile.email | encode_email }}">
                             <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
                         </a>
+                        {% endif %}
 
                         {% if site.data.profile.gscholar %}
                         {%- if site.data.profile.gscholar contains 'scholar.google' -%}

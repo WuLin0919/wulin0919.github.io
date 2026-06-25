@@ -39,4 +39,29 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    var flowerStorageKey = 'wu-lin-flower-count';
+    var flowerSentThisVisit = false;
+    var flowerCount = parseInt(localStorage.getItem(flowerStorageKey) || '0', 10);
+    var $flowerButtons = $('.flower-button');
+
+    function updateFlowerButtons() {
+        $flowerButtons.find('.flower-count').text(flowerCount);
+        if (flowerSentThisVisit) {
+            $flowerButtons.addClass('is-sent').attr('disabled', true).attr('title', 'Flower sent');
+        }
+    }
+
+    updateFlowerButtons();
+
+    $flowerButtons.on('click', function () {
+        if (flowerSentThisVisit) {
+            return;
+        }
+        flowerSentThisVisit = true;
+        flowerCount += 1;
+        localStorage.setItem(flowerStorageKey, String(flowerCount));
+        updateFlowerButtons();
+        $('[data-toggle="tooltip"]').tooltip('dispose').tooltip();
+    });
 })
