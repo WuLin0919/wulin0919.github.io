@@ -1,5 +1,3 @@
 pages:
 - name: Home
   url: /
-- name: Publications
-  url: /publications
