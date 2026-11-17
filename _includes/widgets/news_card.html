@@ -2,6 +2,9 @@
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-book"></i> Publications</h6>
+    <div class="px-3 pt-2 pb-1">
+        {% include widgets/publication_legend.html %}
+    </div>
     <div class="px-3 pb-1 small">
         {% for year in news_by_year %}
         <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">

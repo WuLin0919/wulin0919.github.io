@@ -1,7 +1,13 @@
 <footer class="footer border-top small">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <div class="text-muted">
-            <i>Last updated: <time datetime="{{ 'now' | date: '%Y-%m-%d' }}">{{ "now" | date: "%b %d, %Y" }}</time></i>
+        <div class="footer-content">
+            <div class="footer-updated">
+                Last updated: <time datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: "%b %d, %Y" }}</time>
+            </div>
+            <div class="footer-signature">
+                {{ site.data.profile.primary_name }} &middot; {{ site.data.profile.education.first.name }}
+            </div>
         </div>
     </div>
 </footer>
+<script src="{{ '/assets/js/footer.js' | relative_url }}" defer></script>
