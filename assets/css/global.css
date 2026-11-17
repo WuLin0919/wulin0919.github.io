@@ -1,9 +1,14 @@
 @charset "utf-8";
+:root {
+    --site-footer-height: 64px;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 18px;
     padding-top: 5.0rem;
+    padding-bottom: calc(var(--site-footer-height) + env(safe-area-inset-bottom, 0px) + 1.5rem);
 }
 
 @media (min-width: 1200px) {
@@ -51,6 +56,21 @@ h1, h2, h3, h4, h5, h6,
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    align-items: center;
+    height: calc(var(--site-footer-height) + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 }
